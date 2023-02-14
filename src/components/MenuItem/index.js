@@ -3,10 +3,13 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
 
 import styles from './styles';
+import NavigationService from '../../navigation/NavigationService';
 
 const MenuItem = ({item}) => {
   return (
-    <TouchableOpacity style={styles.item}>
+    <TouchableOpacity
+      style={styles.item}
+      onPress={() => NavigationService.navigate('Checkout', {menu: item})}>
       <FastImage source={{uri: item.image}} style={styles.image} />
       <View style={styles.content}>
         <Text style={styles.title}>{item.name}</Text>
