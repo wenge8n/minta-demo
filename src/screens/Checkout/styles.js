@@ -34,4 +34,20 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: '500',
   },
+  space: {
+    flex: 1,
+  },
+  orderButton: {
+    height: 45,
+    backgroundColor: 'purple',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  orderButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    color: 'white',
+  },
 });

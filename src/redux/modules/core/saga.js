@@ -37,6 +37,11 @@ function* createOrderWorker({payload}) {
       }),
     );
     const {data} = response;
+    Toast.show({
+      type: 'success',
+      text1: 'Success 👋',
+      text2: 'The menu is ordered successfully 🍔',
+    });
     yield put(createOrderSuccess(data));
   } catch (err) {
     Toast.show({type: 'error', text1: 'Error', text2: err.message});
