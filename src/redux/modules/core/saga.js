@@ -16,7 +16,7 @@ import {
 function* getMenuListWorker() {
   try {
     const response = yield call(() =>
-      apiClient.get('/82384f13-7bef-4abe-9ff1-03c1e540a86f'),
+      apiClient.get('/33af17a7-9985-4dc8-a3ca-436fb23f3c6a'),
     );
     const {data} = response;
     yield put(getMenuListSuccess(data));
